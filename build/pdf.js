@@ -15375,7 +15375,7 @@ class NetworkManager {
     const pendingRequest = this.pendingRequests[xhrId] = {
       xhr
     };
-    xhr.open("GET", this.url);
+    xhr.open("GET", this.url, true);
     xhr.withCredentials = this.withCredentials;
 
     for (const property in this.httpHeaders) {
